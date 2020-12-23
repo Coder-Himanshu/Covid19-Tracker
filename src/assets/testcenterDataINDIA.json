@@ -1,0 +1,303 @@
+{
+    "testingcenter":[
+       {
+          "statename":"Andhra Pradesh",
+          "value":[
+             "Sri Venkateswara Institute of Medical Sciences - Tirupati",
+             "Rangaraya Medical College - Kakinada",
+             "Sidhartha Medical College - Vijaywada",
+             "Govt. Medical College - Ananthpur"
+          ]
+       },
+       {
+        "statename":"Assam",
+        "value":[
+            "Gauhati Medical College - Guwahati",
+            "Regional Medical Research Center - Dibrugarh",
+            "Jorhat Medical College - Jorhat",
+            "Silchar Medical College - Silchar",
+            "Fakkhruddin Ali Ahmed Medical College - Barpeta"
+          
+        ]
+     },
+
+     {
+        "statename":"Bihar",
+        "value":[
+            "Rajendra Memorial Research Institute of Medical Sciences - Patna",
+            "Indira Gandhi Institute Medical Sciences - Patna",
+            "Patna Medical College - Patna",
+            "Darbhanga Medical College - Darbhanga"
+        ]
+     },
+
+     {
+        "statename":"Chandigarh",
+        "value":[
+            "Post Graduate Institute of Medical Education & Research - Chandigarh",
+            "Govt. Medical College - Chandigarh"
+        ]
+     },
+
+     {
+        "statename":"Chhattisgarh",
+        "value":[
+            "All India Institute of Medical Sciences - Raipur",
+            "Late Baliram Kashyap M Govt. Medical College - Jagdalpur"
+        ]
+     },
+
+     {
+        "statename":"Delhi",
+        "value":[
+            "All India Institute Medical Sciences",
+            "Lady Hardinge Medical College",
+            "National Centre for Disease Control",
+            "Ram Manohar Lohia Hospital",
+            "Institute of Liver & Biliary Sciences",
+            "Army Hospital Research & Referral"
+        ]
+     },
+
+     {
+        "statename":"Gujarat",
+        "value":[
+            "BJ Medical College - Ahmedabad",
+            "MP Shah Govt Medical College - Jamnagar",
+            "Govt. Medical College - Surat",
+            "Govt. Medical College - Bhavnagar",
+            "Govt. Medical College - Vadodara",
+            "Govt. Medical College - Rajkot"
+        ]
+     },
+
+     {
+        "statename":"Goa",
+        "value":[
+          "Goa Medical College - Goa"
+        ]
+     },
+
+     {
+        "statename":"Haryana",
+        "value":[
+          "Pt. B.D. Sharma Post Graduate Inst. of Med. Sciences (Rohtak) - Haryana",
+          "BPS Govt. Medical College - Sonipat"
+        ]
+     },
+
+     {
+        "statename":"Himachal Pradesh",
+        "value":[
+            "Indira Gandhi Medical College - Shimla",
+            "Dr. Rajendra Prasad Govt. Medical College - Tanda"
+
+
+        ]
+     },
+
+     {
+        "statename":"Jammu & Kashmir",
+        "value":[
+          "Govt. Medical College - Jammu",
+          "Command Hospital (NC) Udhampur",
+          "Sher-i-Kashmir Institute of Medical Sciences - Srinagar",
+          "Govt. Medical College - Srinagar"
+        ]
+     },
+
+     {
+        "statename":"Jharkhand",
+        "value":[
+          "MGM Medical College & Hospital - Jamshedpur",
+          "Rajendra Institute of Medical Sciences - Ranchi"
+        ]
+     },
+
+     {
+        "statename":"Karnataka",
+        "value":[
+            "Hassan Inst. of Med. Sciences - Hassan",
+            "Mysore Medical College & Research Institute - Mysore",
+            "Shivamogga Institute of Medical Sciences - Shivamogga",
+            "Command Hospital (Air Force) - Bengaluru",
+            "Bangalore Medical College & Research Institute - Bengaluru",
+            "National Institute of Virology, Bangalore Field Unit - Bengaluru",
+            "Gulbarga Institute of Medical Sciences - Gulbarga"
+        ]
+     },
+
+     {
+        "statename":"Kerala",
+        "value":[
+            "National Institute of Virology (Field Unit) - Allapuzzha",
+            "Govt. Medical College - Thiruvanathapuram",
+            "Govt. Medical College - Kozhikode",
+            "Govt. Medical College - Thrissur",
+            "Rajiv Gandhi Center for Biotechnology - Thiruvanathapuram",
+            "Sree Chitra Tirunal Institute of Medical Sciences - Thiruvanathapuram",
+            "State Public Health Laboratory - Trivandrum",
+            "Inter University - Kottayam",
+            "Malabar Cancer Center - Thalassery",
+            "Central University of Kerala (Periy)e - Kasaragod"
+        ]
+     },
+      
+     {
+        "statename":"Maharashtra",
+        "value":[
+            "National Institute of Virology - Pune",
+            "Seth GS Medical College & KEM Hospital - Mumbai",
+            "Kasturba Hospital for Infectious Diseases - Mumbai",
+            "National Institute of Virology Field Unit - Mumbai",
+            "Armed Forces Medical College - Pune",
+            "BJ Medical College - Pune",
+            "Indira Gandhi Govt. Medical College - Nagpur",
+            "Grant Medical College & Sir JJ Hospital - Mumbai",
+            "Govt. Medical College - Aurangabad",
+            "V. M. Government Medical College - Solapur",
+            "Haffkine Institute - Mumbai",
+            "Shree Bhausaheb Hire Govt. Medical College - Dhule",
+            "Government Medical College - Miraj"
+        ]
+     },
+
+     {
+        "statename":"Madhya Pradesh",
+        "value":[
+            "All India Institute of Medical Sciences - Bhopal",
+            "National Institute for Research on Tribal Health - Jabalpur",
+            "Mahatma Gandhi Memorial Medical College - Indore",
+            "Gandhi Medical College - Bhopal"
+        ]
+     },
+
+     {
+        "statename":"Manipur",
+        "value":[
+            "Jawaharlal Nehru Institute of Med. Sciences (Imphal East) - Manipur",
+            "Regional Institute of Medical Sciences - Imphal"
+        ]
+     },
+
+     {
+        "statename":"Meghalaya",
+        "value":[
+          "North Eastern Indira Gandhi Regional Institute of Health & Medical Sciences (Shillong) - Meghalaya"
+        ]
+     },
+
+     {
+        "statename":"Odisha",
+        "value":[
+            "Regional Medical Research Centre - Bhubaneshwar",
+            "All India Institute of Medical Sciences - Bhubaneshwar",
+            "SCB Medical College and Hospital - Cuttack"
+        ]
+     },
+
+     {
+        "statename":"Puducherry",
+        "value":[
+            "Jawaharlal Institute of Postgraduate Medical Education & Research - Puducherry"
+        ]
+     },
+
+     {
+        "statename":"Punjab",
+        "value":[
+          "Govt. Medical College - Amritsar",
+          "Govt. Medical College - Patiala"
+        ]
+     },
+
+     {
+        "statename":"Rajasthan",
+        "value":[
+            "Sawai Man Singh Medical College - Jaipur",
+            "Dr. Sampurnan and Medical College - Jodhpur",
+            "Jhalawar Medical College - Jhalawar",
+            "RNT Medical College - Udaipur",
+            "SP Medical College - Bikaner",
+            "All India Institute of Medical Sciences - Jodhpur",
+            "JLN Medical College - Ajmer",
+            "Govt. Medical College - Kota"
+        ]
+     },
+
+     {
+        "statename":"Tamil Nadu",
+        "value":[
+            "King Institute of Preventive Medicine & Research - Chennai",
+            "Madras Medical College - Chennai",
+            "Govt. Theni Medical College - Theni",
+            "Tirunelveli Medical College - Tirunelveli",
+            "Govt. Medical College - Thiruvarur",
+            "Kumar Mangalam Govt. Medical College - Salem",
+            "Coimbatore Medical College - Coimbatore",
+            "Govt. Medical College - Villupuram",
+            "Madurai Medical College - Madurai",
+            "K A P Viswanatham Govt. Medical College - Trichy"
+        ]
+     },
+
+     {
+        "statename":"Telangana",
+        "value":[
+            "Gandhi Medical College - Secunderabad",
+            "Osmania Medical College - Hyderabad",
+            "Sir Ronald Ross of Tropical & Communicable Diseases - Hyderabad",
+            "Nizam’s Institute of Medical Sciences - Hyderabad",
+            "Institute of Preventive Medicine - Hyderabad"
+        ]
+     },
+
+     {
+        "statename":"Tripura",
+        "value":[
+            "Government Medical College - Agartala"
+        ]
+     },
+     
+     {
+        "statename":"Uttar Pradesh",
+        "value":[
+            "King George Medical University - Lucknow",
+            "Institute of Medical Sciences, Banaras Hindu University - Varanasi",
+            "Jawaharlal Nehru Medical College - Aligarh",
+            "Command Hospital - Lucknow",
+            "Lala Lajpat Rai Memorial Medical College - Meerut",
+            "Sanjay Gandhi Post Graduate Institute - Lucknow",
+            "Uttar Pradesh University of Medical Sciences (Formerly Uttar Pradesh RIMS) - Saifai",
+            "Regional Medical Research Centre - Gorakhpur"
+        ]
+     },
+
+     {
+        "statename":"Uttarakhand",
+        "value":[
+            "Govt. Medical College - Haldwani",
+            "All India Institute of Medical Sciences -  Rishikesh"
+        ]
+     },
+
+     {
+        "statename":"West Bengal",
+        "value":[
+            "National Institute of Cholera & Enteric Diseases - Kolkata",
+            "Institute of Post Graduate Medical Education & Research - Kolkata",
+            "Midnapore Medical College - Midnapore",
+            "North Bengal Medical College - Darjeeling",
+            "School of Tropical Medicine - Kolkata"
+        ]
+     },
+
+     {
+        "statename":"Andaman & Nicobar Islands",
+        "value":[
+          "Regional Medical Research Centre - Port Blair"
+        ]
+     }
+
+    ]
+ }

@@ -1,0 +1,212 @@
+
+
+<div class="container-fluid">
+
+<marquee class="blink blink-two"><strong>This web application will automatically refresh in every 3 minutes with latest data</strong></marquee>
+<div class="buttons">
+<button class="btn btn-primary contactButton" (click)="contact()">Contact Developer</button>
+<button class="btn btn-danger contactButton" (click)="resouce()">Resource Center</button>
+</div>
+  <h2 class="headtwo" style="display: flex;justify-content: center;margin-top: 2%;margin-left: 20vw;font-family: Arial, Helvetica, sans-serif;">Covid 19 Live Tracker</h2>
+  <p class="ptag" style="margin-top: -4em;margin-bottom: 4em;">Last Update: <strong>{{time}}</strong></p>
+  <div class="flex-container">
+    <div>
+      <h5>Total Cases</h5>
+      <h6 style="color:red;">{{xyz}}</h6>
+    </div>
+    <div>
+      <h5>Total Recovered</h5>
+      <h6 style="color:red;">{{totalrecovered}}</h6>
+    </div>
+    <div>
+      <h5>Active Cases</h5>
+      <h6 style="color:red;">{{totalactive}}</h6>
+    </div>
+    <div>
+      <h5>Critical</h5>
+      <h6 style="color:red;">{{Totalcritical}}</h6>
+    </div>
+    <div>
+      <h5>Affected Countries</h5>
+      <h6 style="color:red;">{{affectedcountries}}</h6>
+    </div>
+  </div><br>
+
+  <div id="accordion" class="myaccordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button (click)="testingcenter()" class="d-flex align-items-center btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            List of COVID-19 Testing centers - INDIA
+          </button>
+        </h2>
+      </div>
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          <div class="carcd" *ngFor="let data of covidcenter?.testingcenter" >
+            <table  style="width:100%">
+              <tr>
+                  <th style="padding: 1em;">State Name</th>
+                  <th style="padding: 1em;">Testing center name</th>
+              </tr>
+              <tr>
+                  <td style="padding: 2em;">{{data.statename}}</td>
+                  <td style="padding: 1em;">{{data.value}}</td>
+              </tr>
+          </table>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+<!-- indian charts table start-->
+
+<div id="row" >
+
+
+  <div class="row" style="margin-bottom: 10px;">
+    <div class="search-hero col-md-* col-md-8 upTable" style="margin-bottom: 1em;">
+      <h4 style="text-align: center;">Data of Indian States </h4>
+      <input class="form-control" type="text" name="search" style="text-align: center;" [(ngModel)]="searchText" autocomplete="off" placeholder="Please enter state name for filtered results">
+      <br>
+      <table  class="upperTable">
+        <tr>
+            <th class="thclass son">S. No.</th>
+            <th class="thclass so">Name of State / UT</th>
+            <th class="thclass">Total Confirmed cases </th>
+            <th class="thclass">Cured</th>
+            <th class="thclass">Deaths</th>
+        </tr>
+    </table>
+    </div>
+
+<div class="col-md-8 tb" style="float: right;margin-bottom: 6vh;overflow: scroll;height: 25em;">
+<div style="margin-left: 2em;">
+    <table class = "gfg">
+        <tr class="trclass" *ngFor = "let data of stateData | filter:searchText">
+            <td class ="tdclass abc">{{data.sno}}</td>
+            <td class ="tdclass">{{data.state_name}}</td>
+            <td  class ="tdclass xyz">{{data.positive}}</td>
+            <td  class ="tdclass">{{data.cured}}</td>
+            <td  class ="tdclass">{{data.death}}</td>
+        </tr>
+    </table>
+    </div>
+</div>
+
+  <div class="col-md-4 newssection" style="margin-top: -10em;">
+    <h4 style="text-align: center;">Covid-19 News</h4><br>
+    <div class="scrollnews">
+<div class="card news" *ngFor="let data of newss?.articles">
+  <img class="card-img-top" src="../assets/angular-ssr-starter-SP2.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-title"><strong>News Title</strong> : {{data.title}} </p>
+    <p class="card-text"><strong>News Content</strong> : {{data.content}} </p>
+    <a href="{{data.url}}" class="articlebtn btn btn-primary">Check full article</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- indian charts table end -->
+<hr>
+ <div class="row chartalign">
+  <div class="col-md-6">
+    <div [chart]="chart"></div>
+  </div>
+
+  <div class="col-md-6">
+    <div [chart]="chartt"></div>
+  </div>
+ </div>
+<hr>
+<div id="container" class="row chartalign">
+  <div  class="col-md-6">
+    <div [chart]="charttt"></div>
+  </div>
+
+  <div class="col-md-6">
+    <div [chart]="chartttt"></div>
+  </div>
+</div>
+
+    <div class="row">
+      <div class="search-hero col-md-*">
+        <input class="form-control" type="text" name="search" style="text-align: center;" [(ngModel)]="searchText" autocomplete="off" placeholder="Please enter country name for filtered results">
+      </div>
+
+      <p-toast position="center" [showTransformOptions]="'translateX(50%)'" [hideTransformOptions]="'translateX(80%)'">
+
+      </p-toast>
+<!-- Table started  -->
+<div class="tablebody">
+<table  id="main_table_countries_today" class="table table-bordered table-hover main_table_countries dataTable no-footer" style="width: 95%;margin-top:2em;margin-left: 2em;">
+    <thead style="background: cadetblue;margin-top: -2.1em;">
+  <tr role="row"><th width="100" class="sorting" tabindex="0" aria-controls="main_table_countries_today" rowspan="1" colspan="1" aria-label="Country,Other: activate to sort column ascending" style="width: 100px;">Country,<br>Other</th><th width="20" class="sorting_desc" tabindex="0" aria-controls="main_table_countries_today" rowspan="1" colspan="1" aria-sort="descending" aria-label="TotalCases: activate to sort column ascending" style="width: 47px;">Total<br>Cases</th><th width="30" class="sorting" tabindex="0" aria-controls="main_table_countries_today" rowspan="1" colspan="1" aria-label="NewCases: activate to sort column ascending" style="width: 42px;">New<br>Cases</th><th width="30" class="sorting" tabindex="0" aria-controls="main_table_countries_today" rowspan="1" colspan="1" aria-label="TotalDeaths: activate to sort column ascending" style="width: 47px;">Total<br>Deaths</th><th width="30" class="sorting" tabindex="0" aria-controls="main_table_countries_today" rowspan="1" colspan="1" aria-label="NewDeaths: activate to sort column ascending" style="width: 47px;">New<br>Deaths</th><th width="30" class="sorting" tabindex="0" aria-controls="main_table_countries_today" rowspan="1" colspan="1" aria-label="TotalRecovered: activate to sort column ascending" style="width: 72px;">Total<br>Recovered</th><th width="30" class="sorting" tabindex="0" aria-controls="main_table_countries_today" rowspan="1" colspan="1" aria-label="ActiveCases: activate to sort column ascending" style="width: 43px;">Active<br>Cases</th><th width="30" class="sorting" tabindex="0" aria-controls="main_table_countries_today" rowspan="1" colspan="1" aria-label="Serious,Critical: activate to sort column ascending" style="width: 56px;">Serious,<br>Critical</th><th width="30" class="sorting" tabindex="0" aria-controls="main_table_countries_today" rowspan="1" colspan="1" aria-label="Tot&amp;nbsp;Cases/1M pop: activate to sort column ascending" style="width: 70px;">Tot&nbsp;Cases/<br>1M pop</th><th width="30" class="sorting" tabindex="0" aria-controls="main_table_countries_today" rowspan="1" colspan="1" aria-label="Deaths/1M pop: activate to sort column ascending" style="width: 51px;">Deaths/<br>1M pop</th><th width="30" class="sorting" tabindex="0" aria-controls="main_table_countries_today" rowspan="1" colspan="1" aria-label="TotalTests: activate to sort column ascending" style="width: 47px;">Total<br>Tests</th><th width="30" class="sorting" tabindex="0" aria-controls="main_table_countries_today" rowspan="1" colspan="1" aria-label="Tests/
+  1M pop
+  : activate to sort column ascending" style="width: 49px;">Tests/1M pop<br>
+  </th></tr>
+  </thead>
+  <tbody>
+  <tr style="background: gray;color: white;" class="total_row_world odd" role="row">
+  <td style="text-align:left;">World</td>
+  <td class="sorting_1">{{xyz}}</td>
+  <td>{{TodayCases}}</td>
+  <td>{{totaldeaths}}</td>
+  <td>{{newdeaths}}</td>
+  <td>{{totalrecovered}}</td>
+  <td>{{totalactive}}</td>
+  <td>{{Totalcritical}}</td>
+  <td>{{PerMillionPop}}</td>
+  <td>{{DeathPerMillionPop}}</td>
+  <td></td>
+  <td></td>
+  </tr><tr *ngFor="let data of Tabledata | filter:searchText" style="" role="row" class="even">
+  <td style="font-weight: bold; font-size:15px; text-align:left;"><img style="width: 35px;" src = {{data.countryInfo.flag}} />&nbsp;&nbsp; {{data.country}}</td>
+  <td style="font-weight: bold; text-align:right" class="sorting_1">{{data.cases}}</td>
+  <td id="tcases" style="font-weight:bold; text-align:right;background-color:orange;color: whitesmoke;">{{data.todayCases}}</td>
+  <td style="font-weight: bold; text-align:right;">{{data.deaths}}</td>
+   <td style="font-weight: bold;text-align:right;background-color:red; color:white">{{data.todayDeaths}}</td>
+  <td style="font-weight: bold; text-align:right">{{data.recovered}}</td>
+  <td style="text-align:right;font-weight:bold;">{{data.active}}</td>
+  <td style="font-weight: bold; text-align:right">{{data.critical}}</td>
+  <td style="font-weight: bold; text-align:right">{{data.casesPerOneMillion}}</td>
+  <td style="font-weight: bold; text-align:right">{{data.deathsPerOneMillion}}</td>
+  <td style="font-weight: bold; text-align:right">{{data.tests}}</td>
+  <td style="font-weight: bold; text-align:right">{{data.testsPerOneMillion}}</td>
+  </tbody>
+  <tbody>
+  <tr class="total_row">
+  <td><strong>Total:</strong></td>
+  <td style="text-decoration: none;">{{xyz}}</td>
+  <td style="background-color:#FFEEAA; color:#000;">{{TodayCases}}</td>
+  <td>{{totaldeaths}}</td>
+  <td style="background-color:red; color:#fff">{{newdeaths}}</td>
+  <td>{{totalrecovered}}</td>
+  <td>{{totalactive}}</td>
+  <td>{{Totalcritical}}</td>
+  <td>{{PerMillionPop}}</td>
+  <td>{{DeathPerMillionPop}}</td>
+  <td></td>
+  <td></td>
+  </tr>
+  </tbody>
+  </table>
+ </div>
+  <!-- Table Ended -->
+
+
+
+
+</div>
+
+<ngx-ui-loader></ngx-ui-loader>
+<h6 style="text-align: center;margin-top: 2em;padding: 1em;">Thanks for visiting - Regards <a href="https://www.linkedin.com/in/creativehimanshu00/">[ Himanshu Sharma ]</a> </h6>
+
